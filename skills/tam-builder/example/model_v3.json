@@ -1,0 +1,389 @@
+{
+  "name": "Relaydesk account model v3 (invented example): B2C penalty raised",
+  "key": "domain",
+  "parts": {
+    "fit": {
+      "max": 40,
+      "unknown_note": "no segment, size or model on the row",
+      "rules": [
+        {
+          "type": "map",
+          "column": "segment",
+          "label": "segment",
+          "points": {
+            "1": 12,
+            "2": 10,
+            "3": 6,
+            "4": 3
+          },
+          "names": {
+            "1": "B2B software with a support team",
+            "2": "regulated industry with a support team",
+            "3": "marketplace or logistics",
+            "4": "services"
+          }
+        },
+        {
+          "type": "bands",
+          "column": "employees",
+          "label": "size",
+          "steps": [
+            {
+              "min": 200,
+              "max": 5000,
+              "points": 12
+            },
+            {
+              "min": 5001,
+              "points": 6
+            },
+            {
+              "min": 20,
+              "max": 199,
+              "points": 5
+            }
+          ]
+        },
+        {
+          "type": "map",
+          "column": "business_model",
+          "label": "model",
+          "points": {
+            "b2b": 3,
+            "b2c": -10
+          },
+          "note": "S3: consumer support teams buy contact-center software; -6 left them above decent B2B rows (granitemutual.example)",
+          "names": {
+            "b2b": "sells to businesses",
+            "b2c": "sells to consumers"
+          }
+        },
+        {
+          "type": "bands",
+          "column": "support_headcount",
+          "label": "support team size",
+          "steps": [
+            {
+              "min": 15,
+              "max": 300,
+              "points": 4
+            },
+            {
+              "min": 301,
+              "points": 0
+            },
+            {
+              "min": 5,
+              "max": 14,
+              "points": 1
+            }
+          ],
+          "note": "S2: the product fits teams of 15 to 300 agents; a contact center above 300 is a different motion (exposed by granitemutual.example, cartwheel-retail.example)"
+        },
+        {
+          "type": "map",
+          "column": "work_mode",
+          "label": "work mode",
+          "points": {
+            "remote": 2,
+            "hybrid": 1
+          },
+          "names": {
+            "remote": "remote team",
+            "hybrid": "hybrid team"
+          }
+        }
+      ]
+    },
+    "prize": {
+      "max": 25,
+      "unknown_note": "no headcount on the row",
+      "rules": [
+        {
+          "type": "bands",
+          "column": "employees",
+          "label": "company size",
+          "steps": [
+            {
+              "min": 2000,
+              "points": 8
+            },
+            {
+              "min": 1000,
+              "points": 7
+            },
+            {
+              "min": 500,
+              "points": 6
+            },
+            {
+              "min": 200,
+              "points": 5
+            },
+            {
+              "min": 50,
+              "points": 3
+            },
+            {
+              "min": 0,
+              "points": 1
+            }
+          ]
+        },
+        {
+          "type": "bands",
+          "column": "support_headcount",
+          "label": "support agents",
+          "steps": [
+            {
+              "min": 100,
+              "max": 300,
+              "points": 12
+            },
+            {
+              "min": 30,
+              "max": 99,
+              "points": 8
+            },
+            {
+              "min": 15,
+              "max": 29,
+              "points": 4
+            },
+            {
+              "min": 301,
+              "points": 2
+            }
+          ],
+          "note": "S2: more agents is a bigger prize only up to the product's ceiling"
+        }
+      ]
+    },
+    "awareness": {
+      "max": 15,
+      "unknown_note": "no stack or SLA check on the row",
+      "rules": [
+        {
+          "type": "map",
+          "column": "rival_tool",
+          "label": "in use",
+          "points": {
+            "legacy_helpdesk": 10,
+            "shared_inbox_email": 6,
+            "none_found": 0
+          },
+          "names": {
+            "legacy_helpdesk": "older helpdesk in use",
+            "shared_inbox_email": "shared email inboxes in use"
+          }
+        },
+        {
+          "type": "flag",
+          "column": "public_sla",
+          "label": "publishes a support SLA",
+          "points": 3
+        }
+      ]
+    },
+    "timing": {
+      "max": 20,
+      "unknown_note": "no hiring, leader or funding data",
+      "rules": [
+        {
+          "type": "bands",
+          "column": "open_support_roles",
+          "label": "open support roles",
+          "steps": [
+            {
+              "min": 10,
+              "points": 8
+            },
+            {
+              "min": 3,
+              "points": 5
+            },
+            {
+              "min": 1,
+              "points": 2
+            }
+          ],
+          "recency": {
+            "column": "last_job_post",
+            "multipliers": [
+              [
+                183,
+                1.0
+              ],
+              [
+                365,
+                0.85
+              ],
+              [
+                548,
+                0.65
+              ],
+              [
+                null,
+                0.4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "flag",
+          "column": "new_support_leader",
+          "label": "new support leader",
+          "points": 6
+        },
+        {
+          "type": "flag",
+          "column": "funding_12m",
+          "label": "funding in last 12 months",
+          "points": 4
+        }
+      ]
+    }
+  },
+  "disqualify": [
+    {
+      "column": "exclusion_reason",
+      "op": "nonblank",
+      "reason": "from_column"
+    },
+    {
+      "column": "employees",
+      "op": "lt",
+      "value": 20,
+      "reason": "under_20_employees"
+    }
+  ],
+  "confidence": {
+    "read_column": "page_read",
+    "min_known_parts": 3,
+    "quotable": [
+      {
+        "column": "rival_tool",
+        "op": "in",
+        "value": [
+          "legacy_helpdesk",
+          "shared_inbox_email"
+        ]
+      },
+      {
+        "column": "new_support_leader",
+        "op": "eq",
+        "value": "yes"
+      }
+    ]
+  },
+  "bands": {
+    "hot": 60,
+    "warm": 45
+  },
+  "owner_rules": [
+    {
+      "when": [
+        {
+          "column": "industry",
+          "op": "in",
+          "value": [
+            "fintech",
+            "healthcare",
+            "legal",
+            "insurance"
+          ]
+        }
+      ],
+      "owner": "Head of Support Operations",
+      "champion": "support operations lead",
+      "basis": "regulated industry: the support owner buys, and the security owner joins the review [assumption]"
+    },
+    {
+      "when": [
+        {
+          "column": "new_support_leader",
+          "op": "eq",
+          "value": "yes"
+        }
+      ],
+      "owner": "VP of Support",
+      "champion": "support operations lead",
+      "basis": "a new support leader is reviewing the tool stack [assumption]"
+    },
+    {
+      "when": [
+        {
+          "column": "support_headcount",
+          "op": "gte",
+          "value": 100
+        }
+      ],
+      "owner": "VP of Support",
+      "champion": "support operations lead",
+      "basis": "a support team of 100 or more has a VP who owns its tools [assumption]"
+    },
+    {
+      "when": [],
+      "owner": "Head of Support",
+      "champion": "",
+      "basis": "smaller support team: the head of support owns the tools [assumption]"
+    }
+  ],
+  "brief": {
+    "scope_bands": [
+      "hot",
+      "warm"
+    ],
+    "min_words": 45,
+    "max_words": 90,
+    "fields": {
+      "segment": "kind of company",
+      "industry": "industry",
+      "hq_country": "headquarters",
+      "employees": "staff",
+      "support_headcount": "support agents",
+      "open_support_roles": "open support roles",
+      "last_job_post": "last support job post",
+      "rival_tool": "support tool in use",
+      "work_mode": "work mode",
+      "funding_12m": "funding in the last 12 months",
+      "new_support_leader": "new support leader",
+      "public_sla": "publishes a support SLA"
+    },
+    "value_labels": {
+      "rival_tool": {
+        "legacy_helpdesk": "an older helpdesk tool",
+        "shared_inbox_email": "shared email inboxes",
+        "none_found": "no support tool named on its public pages"
+      },
+      "industry": {
+        "b2b_saas": "business software",
+        "fintech": "financial technology",
+        "healthcare": "healthcare",
+        "legal": "legal technology",
+        "insurance": "insurance technology",
+        "other": "other"
+      },
+      "segment": {
+        "1": "B2B software with a support team",
+        "2": "regulated industry with a support team",
+        "3": "marketplace or logistics",
+        "4": "services"
+      }
+    },
+    "banned": [
+      "score",
+      "points",
+      "band",
+      "tier",
+      "our",
+      "we",
+      "target list",
+      "receipt",
+      "S1-",
+      "S2-",
+      "S3-",
+      "segment"
+    ]
+  }
+}

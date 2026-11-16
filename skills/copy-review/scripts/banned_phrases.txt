@@ -1,0 +1,91 @@
+# One phrase per line, case-insensitive. Lines starting with # are comments.
+# Matched as whole words or phrases with flexible whitespace and straight or curly apostrophes.
+# Add your own; remove any you actually say out loud.
+# Openers
+i hope this message finds you well
+i hope this finds you well
+i hope you're doing well
+i hope you are doing well
+hope you're having a great week
+i wanted to reach out
+just reaching out
+i'm reaching out because
+i am reaching out because
+i came across your profile
+came across your profile
+i was impressed by your
+impressed by your
+i noticed that
+my name is
+allow me to introduce myself
+quick question
+# Filler and hype
+in today's fast-paced
+fast-paced world
+ever-evolving
+leverage
+leveraging
+synergy
+synergies
+unlock your potential
+game-changer
+game changer
+game-changing
+cutting-edge
+state-of-the-art
+seamless
+seamlessly
+robust solution
+best-in-class
+streamline your workflow
+elevate
+at the end of the day
+it goes without saying
+dive deep
+deep dive
+delve
+transformative
+revolutionize
+empower
+holistic
+testament to
+pivotal
+navigate the complexities
+in the realm of
+tapestry
+resonates with me
+passionate about
+thrilled
+i'm excited to
+value-add
+move the needle
+low-hanging fruit
+circle back
+touch base
+pick your brain
+hop on a call
+explore potential
+# Follow-up tics
+just bumping
+bumping this
+following up on my last
+# Closers
+please don't hesitate
+i look forward to hearing from you
+look forward to hearing from you
+feel free to let me know
+thank you for your time and consideration
+warm regards
+kind regards
+best regards
+looking forward to connecting
+let me know your thoughts
+would love to connect
+i'd love to connect
+# Chatbot artifacts
+certainly
+great question
+i hope this helps
+# Superiority
+what sets me apart
+perfect fit

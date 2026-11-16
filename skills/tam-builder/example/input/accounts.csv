@@ -1,0 +1,29 @@
+domain,company,hq_country,industry,employees,business_model,segment,support_headcount,open_support_roles,last_job_post,rival_tool,work_mode,funding_12m,new_support_leader,public_sla,page_read,test_group,exclusion_reason,notes
+brightpath-crm.example,Brightpath CRM,US,b2b_saas,640,b2b,1,85,6,2025-12-02,legacy_helpdesk,remote,yes,yes,yes,yes,strong,,
+ledgerloop.example,Ledgerloop,US,fintech,1200,b2b,2,140,9,2025-11-20,shared_inbox_email,hybrid,no,yes,yes,yes,strong,,
+tallyforge.example,Tallyforge,US,b2b_saas,420,b2b,1,60,4,2025-12-10,legacy_helpdesk,remote,yes,no,no,yes,strong,,
+quaystack.example,Quaystack,CA,b2b_saas,900,b2b,1,110,7,2025-10-28,legacy_helpdesk,hybrid,no,yes,yes,yes,strong,,
+meridianpay.example,Meridian Pay,US,fintech,2300,b2b,2,260,12,2025-12-15,shared_inbox_email,hybrid,yes,no,yes,yes,strong,,
+coppernote.example,Coppernote,US,b2b_saas,310,b2b,1,25,1,2025-07-01,none_found,hybrid,no,no,no,yes,decent,,
+harborlane.example,Harborlane Logistics,US,other,1800,b2b,3,70,2,2025-09-14,shared_inbox_email,office,no,no,no,yes,decent,,
+pinecrest-hr.example,Pinecrest HR,GB,b2b_saas,150,b2b,1,18,1,2025-11-02,legacy_helpdesk,remote,no,no,no,yes,decent,,
+orbitmarket.example,Orbit Market,US,other,700,b2b,3,45,0,,none_found,hybrid,yes,no,no,yes,decent,,
+fernway.example,Fernway Insurance Tech,US,insurance,520,b2b,2,35,1,2025-04-20,none_found,office,no,no,yes,yes,decent,,
+granitemutual.example,Granite Mutual,US,other,42000,b2c,2,1500,40,2025-12-20,legacy_helpdesk,office,no,no,yes,yes,bad,,consumer bank call center
+sunnyside-games.example,Sunnyside Games,US,other,260,b2c,4,30,2,2025-11-01,shared_inbox_email,remote,yes,no,no,yes,bad,,
+cartwheel-retail.example,Cartwheel Retail,US,other,9000,b2c,3,400,15,2025-12-01,legacy_helpdesk,office,no,no,yes,yes,bad,,
+studio-ninefold.example,Studio Ninefold,US,other,45,b2b,4,2,0,,none_found,remote,no,no,no,yes,bad,,
+ironbridge-mfg.example,Ironbridge Manufacturing,US,other,3200,b2b,4,12,0,2024-06-01,none_found,office,no,no,no,yes,bad,,
+lumenarc.example,Lumenarc,US,b2b_saas,380,b2b,1,40,3,2025-12-05,legacy_helpdesk,remote,no,,,no,,,careers page not read yet
+kitepost.example,Kitepost,US,b2b_saas,12,b2b,1,2,0,,none_found,remote,no,no,no,yes,,,
+ticketpoint.example,Ticketpoint,US,b2b_saas,600,b2b,1,50,2,2025-11-01,,hybrid,yes,no,yes,yes,,competitor_or_builder,builds a ticketing tool
+saltmarsh.example,Saltmarsh Analytics,US,b2b_saas,900,b2b,1,,,,,hybrid,,,,yes,,,no support data found yet
+bluefinch.example,Bluefinch Health,US,healthcare,1500,b2b,2,120,5,2025-08-10,shared_inbox_email,hybrid,no,yes,no,yes,,,
+northgate-legal.example,Northgate Legal Cloud,US,legal,260,b2b,2,30,2,2025-12-01,none_found,remote,yes,no,no,yes,,,
+copperline-it.example,Copperline IT Services,US,other,480,b2b,4,60,3,2025-10-01,legacy_helpdesk,office,no,no,yes,yes,,,
+driftwood-apps.example,Driftwood Apps,AU,b2b_saas,220,b2b,1,28,2,2025-11-25,shared_inbox_email,remote,no,no,no,yes,,,
+parcelpoint.example,Parcelpoint,US,other,6500,b2b,3,350,8,2025-12-12,legacy_helpdesk,hybrid,yes,yes,yes,yes,,,
+relaydesk.example,Relaydesk,US,b2b_saas,140,b2b,1,10,1,2025-12-01,,remote,yes,no,yes,yes,,self,the seller
+velvetkey.example,Velvetkey Security,US,b2b_saas,750,b2b,1,55,5,2025-12-18,none_found,hybrid,yes,no,yes,yes,,,
+marigold-edu.example,Marigold Learning,US,other,1100,b2c,3,90,4,2025-11-11,shared_inbox_email,hybrid,no,no,no,yes,,,
+opalgrid.example,Opalgrid,US,b2b_saas,1600,b2b,1,150,3,2025-03-01,legacy_helpdesk,hybrid,no,no,yes,no,,,careers page blocked
