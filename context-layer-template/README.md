@@ -53,3 +53,7 @@ prompts/
 - `skills/tam-builder`: builds and scores the account list from this layer.
 - `skills/outreach-learning-loop`: turns real results into proposals against `context/outreach-rules.md` and `context/icp.md`.
 - `skills/copy-review`: the second reader every draft goes through.
+
+## Credits
+
+Inspired in part by the brainstarter skill from Jared Waxman's GTM Engineer School, which also builds a plain-file company brain from an interview and tags every line with its source. This template adds the refresh loop (agents propose, a person merges), suppression rules, and learning from real outreach results.

@@ -105,3 +105,6 @@ Rerunning is cheap by design: change a weight and rerun stage 4 onward. Re-pull 
 | `references/brief-writer-prompt.md` | the prompt for brief writers |
 | `references/hand-check.md` | the hand check procedure |
 | `example/` | the whole flow on invented data |
+
+## Credits
+The TAM method (breadth list first, formula scoring, readable bands for sales, hand check before any accuracy number) was learned in Jared Waxman's GTM Engineer School.
