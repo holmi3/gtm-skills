@@ -1,0 +1,10 @@
+domain,url,status,chars,read_on,source
+bluefinch.example,https://bluefinch.example/careers/support-specialist,ok,133,2026-01-11,script
+brightpath-crm.example,https://brightpath-crm.example/blog/new-support-leader,ok,140,2026-01-10,script
+brightpath-crm.example,https://brightpath-crm.example/careers/support-lead,ok,319,2026-01-10,script
+ledgerloop.example,https://ledgerloop.example/careers,ok,161,2026-01-11,script
+ledgerloop.example,https://ledgerloop.example/news/cx-leader,ok,135,2026-01-11,script
+meridianpay.example,https://meridianpay.example/careers/partner-support,ok,151,2026-01-11,script
+quaystack.example,https://quaystack.example/jobs/support-engineer,ok,176,2026-01-10,script
+tallyforge.example,https://tallyforge.example/press/series-b,ok,97,2026-01-12,script
+velvetkey.example,https://velvetkey.example/careers,ok,151,2026-01-12,script

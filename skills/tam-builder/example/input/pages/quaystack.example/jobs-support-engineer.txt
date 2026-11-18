@@ -1,0 +1,7 @@
+URL: https://quaystack.example/jobs/support-engineer
+READ: 2026-01-10
+SOURCE: script
+
+Support Engineer, Toronto or hybrid
+You will triage tickets in our helpdesk queue and write the fixes up for the product team.
+We work from our Toronto office two days a week.

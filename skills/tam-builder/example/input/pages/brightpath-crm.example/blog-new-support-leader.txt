@@ -1,0 +1,7 @@
+URL: https://brightpath-crm.example/blog/new-support-leader
+READ: 2026-01-10
+SOURCE: script
+
+Company news
+Welcome to our new VP of Customer Support.
+She joins from a larger software company and will lead support across every region.

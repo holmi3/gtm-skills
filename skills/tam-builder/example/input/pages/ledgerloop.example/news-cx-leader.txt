@@ -1,0 +1,7 @@
+URL: https://ledgerloop.example/news/cx-leader
+READ: 2026-01-11
+SOURCE: script
+
+Press
+Ledgerloop names a new Head of Customer Experience.
+The new leader will run support and onboarding for 1,200 business customers.

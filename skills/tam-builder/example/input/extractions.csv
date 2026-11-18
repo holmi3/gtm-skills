@@ -1,0 +1,14 @@
+domain,field,value,quote,url,confidence
+brightpath-crm.example,rival_tool,legacy_helpdesk,"Experience administering our helpdesk and its macros is a plus",https://brightpath-crm.example/careers/support-lead,high
+brightpath-crm.example,new_support_leader,yes,"Welcome to our new VP of Customer Support",https://brightpath-crm.example/blog/new-support-leader,high
+brightpath-crm.example,employees,640,"Brightpath CRM is a team of about 600 people",https://brightpath-crm.example/careers/support-lead,medium
+quaystack.example,rival_tool,legacy_helpdesk,"You will triage tickets in our helpdesk queue",https://quaystack.example/jobs/support-engineer,high
+quaystack.example,work_mode,remote,"Fully remote, forever",https://quaystack.example/jobs/support-engineer,medium
+meridianpay.example,rival_tool,shared_inbox_email,"Respond to partner requests across our shared support inboxes",https://meridianpay.example/careers/partner-support,medium
+meridianpay.example,rival_tool,chat_widget,"Work closely with compliance on regulated payment questions",https://meridianpay.example/careers/partner-support,low
+ledgerloop.example,new_support_leader,yes,"Ledgerloop names a new Head of Customer Experience",https://ledgerloop.example/news/cx-leader,high
+ledgerloop.example,work_mode,remote,"Most of the team works remotely, with optional offices in two cities",https://ledgerloop.example/careers,medium
+bluefinch.example,new_support_leader,yes,"Join the team under our recently hired Director of Support",https://bluefinch.example/careers/support-specialist,medium
+bluefinch.example,funding_12m,yes,"Bluefinch closes a new funding round",https://bluefinch.example/blog/funding,medium
+tallyforge.example,funding_12m,yes,"Tallyforge raises a Series B",https://tallyforge.example/press/series-b,high
+velvetkey.example,rival_tool,none_found,"[checked] support and careers pages name no support tool",https://velvetkey.example/careers,medium

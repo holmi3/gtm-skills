@@ -1,0 +1,6 @@
+URL: https://tallyforge.example/press/series-b
+READ: 2026-01-12
+SOURCE: script
+
+Press release
+Tallyforge raises a Series B to expand its accounting platform for mid-size firms.
