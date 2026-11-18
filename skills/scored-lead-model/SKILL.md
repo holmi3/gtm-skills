@@ -57,3 +57,6 @@ Never invent a value; unknown stays unknown. Nothing is sent, pushed or written 
 - `references/interview.md`: the 14 questions
 - `references/spec-template.md`: the shape of `scoring_model.md`
 - `references/one-shot-prompt.md`: the same flow as a single paste-in prompt, for someone without skills installed
+
+## Credits
+The four-part scoring approach was learned in Jared Waxman's GTM Engineer School; `references/one-shot-prompt.md` is adapted from a prompt template shared in that program.

@@ -40,7 +40,12 @@ open output/ranked.html
 The skills follow the `SKILL.md` format used by Claude Code and other agents that read skill folders; copy a folder into your agent's skills directory to install it.
 
 ## Author
-Built by Aaron Holmblad ([github.com/holmi3](https://github.com/holmi3)), GTM engineer. The methods were learned in the GTM Engineer School program and generalized from systems I built and ran during it.
+Built by Aaron Holmblad ([github.com/holmi3](https://github.com/holmi3)), GTM engineer. The methods were learned in Jared Waxman's GTM Engineer School and generalized from systems I built and ran during it.
+
+## Credits
+- Methods and frameworks: Jared Waxman's GTM Engineer School.
+- The context layer template is inspired in part by the brainstarter skill from Jared Waxman's GTM Engineer School. The refresh loop, suppression rules and learning from outreach results are my additions.
+- The scored lead model's one-shot prompt is adapted from a prompt template shared in the same program.
 
 ## License
 MIT. See [LICENSE](LICENSE).
