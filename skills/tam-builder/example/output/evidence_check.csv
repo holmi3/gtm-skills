@@ -1,0 +1,14 @@
+domain,field,value,quote,url,read_on,confidence,status
+brightpath-crm.example,rival_tool,legacy_helpdesk,Experience administering our helpdesk and its macros is a plus,https://brightpath-crm.example/careers/support-lead,2026-01-10,high,confirmed: matches the list
+brightpath-crm.example,new_support_leader,yes,Welcome to our new VP of Customer Support,https://brightpath-crm.example/blog/new-support-leader,2026-01-10,high,confirmed: matches the list
+brightpath-crm.example,employees,640,Brightpath CRM is a team of about 600 people,https://brightpath-crm.example/careers/support-lead,2026-01-10,medium,rejected: the number is not in the quote
+quaystack.example,rival_tool,legacy_helpdesk,You will triage tickets in our helpdesk queue,https://quaystack.example/jobs/support-engineer,2026-01-10,high,confirmed: matches the list
+quaystack.example,work_mode,remote,"Fully remote, forever",https://quaystack.example/jobs/support-engineer,2026-01-10,medium,rejected: quote not found on the saved page
+meridianpay.example,rival_tool,shared_inbox_email,Respond to partner requests across our shared support inboxes,https://meridianpay.example/careers/partner-support,2026-01-11,medium,confirmed: matches the list
+meridianpay.example,rival_tool,chat_widget,Work closely with compliance on regulated payment questions,https://meridianpay.example/careers/partner-support,2026-01-11,low,"rejected: 'chat_widget' is not on the list (legacy_helpdesk, none_found, shared_inbox_email, unknown)"
+ledgerloop.example,new_support_leader,yes,Ledgerloop names a new Head of Customer Experience,https://ledgerloop.example/news/cx-leader,2026-01-11,high,confirmed: matches the list
+ledgerloop.example,work_mode,remote,"Most of the team works remotely, with optional offices in two cities",https://ledgerloop.example/careers,2026-01-11,medium,"conflict: list says 'hybrid', left as is"
+bluefinch.example,new_support_leader,yes,Join the team under our recently hired Director of Support,https://bluefinch.example/careers/support-specialist,2026-01-11,medium,confirmed: matches the list
+bluefinch.example,funding_12m,yes,Bluefinch closes a new funding round,https://bluefinch.example/blog/funding,,medium,rejected: url is not a saved page
+tallyforge.example,funding_12m,yes,Tallyforge raises a Series B,https://tallyforge.example/press/series-b,2026-01-12,high,confirmed: matches the list
+velvetkey.example,rival_tool,none_found,[checked] support and careers pages name no support tool,https://velvetkey.example/careers,2026-01-12,medium,confirmed: matches the list

@@ -1,0 +1,7 @@
+URL: https://ledgerloop.example/careers
+READ: 2026-01-11
+SOURCE: script
+
+Careers at Ledgerloop
+Most of the team works remotely, with optional offices in two cities.
+Open roles: Support Specialist, Support Team Lead, Payments Analyst.

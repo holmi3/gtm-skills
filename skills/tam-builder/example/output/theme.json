@@ -1,0 +1,178 @@
+{
+  "client": "Relaydesk",
+  "source_url": "https://relaydesk.example/",
+  "read_on": "2026-01-15",
+  "default_mode": "light",
+  "fonts": {
+    "body": "\"DM Sans\", system-ui, sans-serif",
+    "heading": "\"DM Sans\", system-ui, sans-serif",
+    "heading_weight": "700",
+    "css_url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap"
+  },
+  "radius": "10px",
+  "brand_colors": [
+    "#e4572e",
+    "#1f8a70"
+  ],
+  "light": {
+    "bg": "#fffdf8",
+    "surface": "#f7f5f1",
+    "fg": "#1c2433",
+    "heading": "#10213a",
+    "muted": "#6e7277",
+    "line": "#dfdfdc",
+    "accent": "#d3451b",
+    "accent_fg": "#ffffff",
+    "link": "#cf431b",
+    "hot_bg": "#d3451b",
+    "hot_fg": "#ffffff",
+    "warm_bg": "#1d8269",
+    "warm_fg": "#ffffff",
+    "cold": "#60656e",
+    "research": "#8e9195",
+    "out": "#919295"
+  },
+  "dark": {
+    "bg": "#1f1614",
+    "surface": "#2c2422",
+    "fg": "#fffefc",
+    "heading": "#fffefc",
+    "muted": "#9a9694",
+    "line": "#3e3634",
+    "accent": "#d3451b",
+    "accent_fg": "#ffffff",
+    "link": "#e4572e",
+    "hot_bg": "#d3451b",
+    "hot_fg": "#ffffff",
+    "warm_bg": "#1d8269",
+    "warm_fg": "#ffffff",
+    "cold": "#bcb8b6",
+    "research": "#847e7c",
+    "out": "#6d6765"
+  },
+  "checks": [
+    {
+      "mode": "light",
+      "pair": "fg on bg",
+      "ratio": 15.31,
+      "ok": true
+    },
+    {
+      "mode": "light",
+      "pair": "muted on bg",
+      "ratio": 4.76,
+      "ok": true
+    },
+    {
+      "mode": "light",
+      "pair": "heading on bg",
+      "ratio": 15.88,
+      "ok": true
+    },
+    {
+      "mode": "light",
+      "pair": "link on bg",
+      "ratio": 4.62,
+      "ok": true
+    },
+    {
+      "mode": "light",
+      "pair": "hot_fg on hot_bg",
+      "ratio": 4.53,
+      "ok": true
+    },
+    {
+      "mode": "light",
+      "pair": "warm_fg on warm_bg",
+      "ratio": 4.72,
+      "ok": true
+    },
+    {
+      "mode": "light",
+      "pair": "cold on bg",
+      "ratio": 5.76,
+      "ok": true
+    },
+    {
+      "mode": "light",
+      "pair": "research on bg",
+      "ratio": 3.11,
+      "ok": true
+    },
+    {
+      "mode": "light",
+      "pair": "out on bg",
+      "ratio": 3.06,
+      "ok": true
+    },
+    {
+      "mode": "light",
+      "pair": "fg on surface",
+      "ratio": 14.29,
+      "ok": true
+    },
+    {
+      "mode": "dark",
+      "pair": "fg on bg",
+      "ratio": 17.61,
+      "ok": true
+    },
+    {
+      "mode": "dark",
+      "pair": "muted on bg",
+      "ratio": 6.06,
+      "ok": true
+    },
+    {
+      "mode": "dark",
+      "pair": "heading on bg",
+      "ratio": 17.61,
+      "ok": true
+    },
+    {
+      "mode": "dark",
+      "pair": "link on bg",
+      "ratio": 4.82,
+      "ok": true
+    },
+    {
+      "mode": "dark",
+      "pair": "hot_fg on hot_bg",
+      "ratio": 4.53,
+      "ok": true
+    },
+    {
+      "mode": "dark",
+      "pair": "warm_fg on warm_bg",
+      "ratio": 4.72,
+      "ok": true
+    },
+    {
+      "mode": "dark",
+      "pair": "cold on bg",
+      "ratio": 9.02,
+      "ok": true
+    },
+    {
+      "mode": "dark",
+      "pair": "research on bg",
+      "ratio": 4.44,
+      "ok": true
+    },
+    {
+      "mode": "dark",
+      "pair": "out on bg",
+      "ratio": 3.19,
+      "ok": true
+    },
+    {
+      "mode": "dark",
+      "pair": "fg on surface",
+      "ratio": 15.07,
+      "ok": true
+    }
+  ],
+  "review": [
+    "Open the page next to the client's homepage and compare: background, text, the button color, corners, font."
+  ]
+}

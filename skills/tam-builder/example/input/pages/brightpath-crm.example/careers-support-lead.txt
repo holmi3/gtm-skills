@@ -1,0 +1,9 @@
+URL: https://brightpath-crm.example/careers/support-lead
+READ: 2026-01-10
+SOURCE: script
+
+Support Operations Lead (remote, US)
+Brightpath CRM is a team of about 600 people building CRM software for growing sales teams.
+You will own the tooling our 85-person support team uses every day.
+Experience administering our helpdesk and its macros is a plus.
+Apply with a short note on a support process you rebuilt.

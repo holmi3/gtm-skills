@@ -13,6 +13,7 @@ The model is data. `scripts/score.py` holds no weights of its own, so a weight c
 | `bands` | `{"hot": 60, "warm": 45}` |
 | `owner_rules` | first-match table for the likely owner (stage 5) |
 | `brief` | brief scope, length, field labels, banned words (stage 5) |
+| `fields` | optional closed lists for columns agents fill, used by `apply_evidence.py`: `{"work_mode": ["remote", "hybrid", "office"], "employees": "number"}`. Without it the lists come from the rules: a `map` rule's values, `yes`/`no` for a `flag`, a number for `bands`. `unknown` is always allowed. |
 
 ## Rule types (inside a part's `rules`)
 Every rule may carry `label`, `note` (why it exists; name the row that exposed it) and `only_if` (a list of conditions; the rule is skipped, not unknown, when they fail).
