@@ -1,6 +1,6 @@
 # Scoring iterations (invented example)
 
-The tuning log for the Relaydesk example. Relaydesk is a made-up company selling a shared inbox and ticket routing tool to B2B support teams of roughly 15 to 300 agents. Every company here uses a `.example` domain and invented numbers. Format follows `../subskills/score-tuning/references/iteration-log-template.md`.
+The tuning log for the Relaydesk example. Relaydesk is a made-up company selling a shared inbox and ticket routing tool to B2B support teams of roughly 15 to 300 agents. Every company here uses a `.example` domain and invented numbers. Format follows `../skills/score-tuning/references/iteration-log-template.md`.
 
 Test set: 15 rows in `output/test_set.csv`, 5 strong, 5 decent, 5 bad. Stop rule: strong > decent > bad on the latest total, each group's lowest at least 5 above the next group's highest.
 

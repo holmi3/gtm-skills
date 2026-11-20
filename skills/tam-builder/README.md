@@ -7,7 +7,7 @@ Everything it needs is in this folder, so you can copy it into your agent's skil
 - `SKILL.md` runs the whole flow in nine stages, and a person signs off after stages 1, 4, 7 and 8.
 - `scripts/` does the fetching, checking, scoring and rendering (Python standard library only, plus one browser script that reads the client's look).
 - `references/` has the prompts and notes the stages use.
-- `subskills/scored-lead-model/` and `subskills/score-tuning/` are the scoring approach and the tuning loop it uses.
+- `skills/scored-lead-model/` and `skills/score-tuning/` are the scoring approach and the tuning loop it uses.
 - `context-layer-template/` is the blank context layer that stage 0 copies and fills in for each client.
 - `example/` is a worked run on Relaydesk, a made up company with 28 made up accounts.
 
