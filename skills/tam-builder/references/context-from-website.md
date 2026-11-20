@@ -1,6 +1,6 @@
 # Stage 0: a context layer from the client's website
 
-Before any list, the agent learns the client from their own public pages and writes what it learns into a context layer (`../../../context-layer-template`). The ICP interview in stage 1 then starts from suggestions with sources, so the client corrects a draft instead of filling a blank form. The same visit reads the client's look for the ranked page.
+Before any list, the agent learns the client from their own public pages and writes what it learns into a context layer (`../context-layer-template`). The ICP interview in stage 1 then starts from suggestions with sources, so the client corrects a draft instead of filling a blank form. The same visit reads the client's look for the ranked page.
 
 Only the client's own site and public pages about them. No logins, no forms, no gated downloads.
 

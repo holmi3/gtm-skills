@@ -7,7 +7,7 @@ description: Tune a deterministic account or lead scoring model on a labeled tes
 
 You are tuning a formula, not grading by feel. The script owns the numbers; you own the judgment about whether they are right and what in the model or the data makes them wrong. Nobody types a score into a score column.
 
-Works with any scorer that can write each run into its own column set. The reference scorer is `../tam-builder/scripts/score.py` (JSON model, `S1-`, `S2-`, ... sets); the commands below use it. A full worked run is in `../tam-builder/example/iterations.md`.
+Works with any scorer that can write each run into its own column set. The reference scorer is `../../scripts/score.py` (JSON model, `S1-`, `S2-`, ... sets); the commands below use it. A full worked run is in `../../example/iterations.md`.
 
 ## Files
 - `test_set.csv`: copies of 10 to 20 rows from the main list with a `test_group` column: **strong** (real customers or obvious fits), **decent** (would buy, not first), **bad** (should never reach sales). Optional extra groups, such as companies on the seller's own logo strip, are reported but not part of the stop rule. Pick the groups **before** the first run, so the model is not tuned to whatever it already says.
