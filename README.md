@@ -2,11 +2,11 @@
 
 These are skills I built and ran for go-to-market work, cleaned up so anyone can use them. There's no real data in these copies (the examples use made up companies on `.example` domains).
 
-- [TAM builder](skills/tam-builder/) starts from a client's website and ends with a ranked account list, a short brief for each top account, and a page in the client's own colors. Start here.
-- [Scored lead model](skills/scored-lead-model/) and [score tuning](skills/score-tuning/) do the scoring underneath it. Every row gets a reason, and tuning changes one thing at a time.
+- [TAM builder](skills/tam-builder/) starts from a client's website and ends with a ranked account list, a short brief for each top account, and a page in the client's own colors. The scoring and the context layer live in that folder too, and it has its own README. Start here.
+- [Scored lead model](skills/tam-builder/subskills/scored-lead-model/) and [score tuning](skills/tam-builder/subskills/score-tuning/) do the scoring underneath it. Every row gets a reason, and tuning changes one thing at a time.
 - [Copy review](skills/copy-review/) is a second reader for every draft. It scores how AI the draft sounds and says PASS or REVISE.
 - [Outreach learning loop](skills/outreach-learning-loop/) turns what got replies into rule changes a person approves.
-- [Context layer template](context-layer-template/) is the plain file "company brain" the other skills read first.
+- [Context layer template](skills/tam-builder/context-layer-template/) is the plain file "company brain" the TAM builder fills in for each client.
 
 Wherever there's a score, the model reads and a script does the math, so you can check every number. And nothing sends or merges until a person says yes.
 

@@ -27,7 +27,7 @@ After the last question, write `scoring_model.md` from `references/spec-template
 3. `extract.py`, only for columns that need judgment. Each field comes from a **closed list** with the exact source text saved beside it. Anything a rule can compute (numbers, dates, exact matches) uses the rule. If any step needs model or API calls, say how many and wait for an OK.
 4. `score.py`, per row: each part capped at its maximum; a part whose inputs are all missing is `unknown` (listed in `missing_parts`, scores 0, never averaged); anti-ICP hit means fit 0, band out, `disqualified_reason` filled; a why string; confidence; band. Plus `python score.py --check`: three made-up rows (perfect, anti-ICP, missing data) with asserted points.
 
-A ready reference implementation of this shape (config-driven rules, receipts, iteration columns, bands) is in `../tam-builder/scripts/score.py`. Use it when the user would rather configure than generate code.
+A ready reference implementation of this shape (config-driven rules, receipts, iteration columns, bands) is in `../../scripts/score.py`. Use it when the user would rather configure than generate code.
 
 ### Phase 3: run and report
 1. `--check`, then score every row into `./work/scored.csv`: every original column plus `fit, persona, intent, timing, total, missing_parts, confidence, band, disqualified_reason, why`.

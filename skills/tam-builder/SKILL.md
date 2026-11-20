@@ -7,7 +7,7 @@ description: Build a scored, ranked TAM (total addressable market) account list 
 
 A TAM is not a list of logos. It is a ranked list where every account says why it ranks, who likely owns the decision, and what is still unknown, built so a rep trusts it and a RevOps lead can change a weight and rerun it in seconds.
 
-This skill runs the whole flow, from a client's homepage to a ranked page in the client's look, in nine stages with a human checkpoint after stages 1, 4, 7 and 8. It builds a context layer from `../../context-layer-template`, reuses the scoring approach of `../scored-lead-model` and the tuning loop of `../score-tuning`, and ships the scripts to run it (`scripts/`, Python 3 standard library only; the theme probe is page JavaScript). A complete worked example on invented data is in `example/` (`bash example/run_example.sh`).
+This skill runs the whole flow, from a client's homepage to a ranked page in the client's look, in nine stages with a human checkpoint after stages 1, 4, 7 and 8. It builds a context layer from `context-layer-template/`, reuses the scoring approach of `subskills/scored-lead-model/` and the tuning loop of `subskills/score-tuning/`, and ships the scripts to run it (`scripts/`, Python 3 standard library only; the theme probe is page JavaScript). A complete worked example on invented data is in `example/` (`bash example/run_example.sh`).
 
 ```
 client website --> 0 context layer + theme --> 1 ICP and model --> 2 universe --> 3 pages, extraction, quote check
@@ -57,7 +57,7 @@ Fill the columns the model reads. Prefer a column a data source already returns 
 ## Stage 4: score and tune (checkpoint)
 1. Pick a test set before scoring: 5 strong (real customers or obvious fits), 5 decent, 5 bad, as `test_group` on copies of those rows in `test_set.csv`.
 2. `python scripts/score.py --model model.json --file test_set.csv --write` (baseline set S1), then `--groups`.
-3. Follow `../score-tuning/SKILL.md`: judge every row against the rubric with a fact, name the cause (weight, input or test group), change one thing, rerun with `--next`, log it. Stop when strong > decent > bad with a gap of at least 5, or after three changes with the blocker written down.
+3. Follow `subskills/score-tuning/SKILL.md`: judge every row against the rubric with a fact, name the cause (weight, input or test group), change one thing, rerun with `--next`, log it. Stop when strong > decent > bad with a gap of at least 5, or after three changes with the blocker written down.
 4. Roll out: `python scripts/score.py --model model.json --file accounts.csv --write`. The main file carries one set only, the accepted model.
 
 Show the owner the iteration log, the band counts and the top 25. **Stop for approval.**

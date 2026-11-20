@@ -50,7 +50,7 @@ prompts/
 
 ## Pairs with
 
-- `skills/tam-builder`: builds and scores the account list from this layer.
+- The TAM builder this template ships inside (`skills/tam-builder`): builds and scores the account list from this layer.
 - `skills/outreach-learning-loop`: turns real results into proposals against `context/outreach-rules.md` and `context/icp.md`.
 - `skills/copy-review`: the second reader every draft goes through.
 
